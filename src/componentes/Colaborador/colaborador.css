@@ -39,9 +39,9 @@
 
 .deletar {
   position: absolute;
-  right: 0;
+  right: -18px;
+  top: -16px;
   cursor: pointer;
-  color: #e76666;
   transition: all .4s;
 }
 

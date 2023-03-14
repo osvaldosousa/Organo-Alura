@@ -1,4 +1,4 @@
-import { v4 as uuidv4 } from 'uuid';
+import { v4 as uuidv4 } from 'uuid'
 
 import { useState } from 'react'
 import Banner from './componentes/Banner'
@@ -242,17 +242,19 @@ function App() {
 
   const [colaboradores, setColaboradores] = useState(inicial)
 
-  function deletarColaborador() {
-    console.log('função deletar')
+  function deletarColaborador(id) {
+    setColaboradores(colaboradores.filter(colaborador => colaborador.id !== id))
   }
 
   function mudarCorDotime(cor, id) {
-    setTimes(times.map(time => {
-      if(time.id === id) {
-        time.cor = cor
-      }
-      return time
-    }))
+    setTimes(
+      times.map(time => {
+        if (time.id === id) {
+          time.cor = cor
+        }
+        return time
+      })
+    )
   }
 
   return (
