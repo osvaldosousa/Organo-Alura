@@ -17,3 +17,5 @@ Organo é um projeto desenvolvido em React, sua funcionalidade é organizar time
 2. Excluir Participante
 3. Criar Novo Time
 4. Trocar Cor do Time
+
+  [Deploy](https://organo-one-sooty.vercel.app/) do Projeto na Vercel
